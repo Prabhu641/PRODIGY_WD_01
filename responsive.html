@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>EscapeEnvy</h1>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Explore the World with EscapeEnvy</h1>
+                <p>Your adventure begins here. Discover amazing destinations and travel experiences.</p>
+                <a href="#destinations" class="btn-primary">Explore Destinations</a>
+            </div>
+        </section>
+    </header>
+    
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Top Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="paris.jpeg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>The city of lights awaits you.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="dubai.jpeg" alt="New York">
+                    <h3>Dubaik</h3>
+                    <p>The city that never sleeps.</p>
+                </div>
+                <div class="destination-item">
+                    <img src="japan.jpeg" alt="Tokyo">
+                    <h3>Japan</h3>
+                    <p>Experience the vibrant culture of Japan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>EscapeEnvy is dedicated to helping you find the best travel experiences. Our team of experts curates unique destinations and offers personalized travel advice to make your trips unforgettable.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EscapeEnvy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+   
+    color: #fff;
+  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: fixed;
+    width: 100%;
+    /* z-index: 1000; */
+    background:black;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+.nav-menu li{
+    margin:2px;
+    padding:10px;
+}
+
+.nav-menu li::after{
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: whitesmoke;
+    display: block;    
+    transition: width 0.5s;
+}
+.nav-menu li:hover::after{
+   
+    width:100%;
+    background-color: rgb(213, 224, 235);
+ 
+   
+}
+
+
+.nav-menu a {
+    color: #fff;   height: 2px;
+    text-decoration: none;
+}
+.nav-menu a:hover {
+    color:#d1e8eed7;
+    
+}
+
+.hero {
+    background: url('man1.jpg') no-repeat center center/cover;
+    color:antiquewhite;
+    text-align: center;
+    padding: 200px 20px;
+
+
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.destinations, .about, .contact {
+    padding: 50px 20px;
+}
+
+.destinations h2, .about h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.destination-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.destination-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about p, .contact form {
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background:black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2em;
+        color: #fff;
+    }
+    .nav-menu li:hover::after{
+   
+        width:40%;
+        background-color: rgb(213, 224, 235);
+     
+       
+    }
+
+    .destination-item {
+        flex: 1 1 100%;
+    }
+}
